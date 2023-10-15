@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --button-color: radial-gradient(circle, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9);
+    --reaction-color:hsl(0, 100%, 67%);
+    --memory-color:hsl(39, 100%, 56%);
+    --verbol-color:hsl(166, 100%, 37%);
+    --visual-color:hsl(234, 85%, 45%);
+}
+ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.container  {
+    display: flex;
+    align-items: center;
+    height: 65vh;
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.left-side {
+    height: 100%;
+    width: 50%;
+    background-image: radial-gradient(at center top, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+
+}
+
+.left-title {
+    font-family: "Hanken Grotesk";
+    margin-top: 10%;
+    font-size: 22px;
+    color: hsl(241, 100%, 89%);
+
+}
+
+.circle-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    height: 36%;
+    width: 50%;
+    font-family: "Hanken Grotesk";
+    font-size: 15px;
+    color:hsl(241, 100%, 89%);
+    background-image: radial-gradient(at center top, #4b20f6, #4b20f6, #4b20f6, #491ef5, #2e2be9);
+    box-shadow: rgba(50, 50, 93, 0.10) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.10) 0px 18px 36px -18px inset;
+}
+
+.circle-result h1 {
+    font-size: 60px;
+    font-family: "Hanken Grotesk";
+    color: white;
+}
+
+.left-side-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.description-title h3 {
+    font-family: "Hanken Grotesk";
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.description-title p {
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+    margin: 30px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+.right-title {
+    font-family: "Hanken Grotesk";
+    color: hsl(224, 30%, 27%);  
+    margin-right: 50%;
+}
+
+.summary-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+}
+
+.summary-icon {
+
+    height: 18px;
+    width: 18px;
+    margin: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.summary-icons {
+    display: flex;
+    align-items: center;
+}
+
+.summary-icon-title {
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+}
+
+
+.summary-value {
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    margin: 10px;
+}
+
+.summary-value > .val {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.max-val {
+    font-weight: 600;
+    color: hsla(224, 30%, 27%, 0.6);
+}
+
+/* Contiune Button */
+.next-button {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    background-color: hsl(224, 30%, 27%);
+    height: 42px;
+    width: 86%;
+    border-radius: 50px;
+}
+
+.next-button:hover {
+    background-image: radial-gradient(at center top, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9);
+}
