@@ -186,3 +186,36 @@ body {
 .next-button:hover {
     background-image: radial-gradient(at center top, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9);
 }
+
+/* Responsive */
+
+@media screen and (max-width: 425px) {
+
+    body {
+        height: 120vh;
+    }
+    .container {
+        flex-direction: column;
+        height: 120vh;
+        width: 80%;
+    }
+    .left-side{
+        height: 46%;
+        width: 100%;
+    }
+
+    .circle-result {
+        height: 150px;
+    }
+
+    .description-title p {
+        margin: 5px;
+    }
+    .left-title {
+        margin: auto;
+    }
+
+    .right-title {
+        margin-top: 15px;
+    }
+}
